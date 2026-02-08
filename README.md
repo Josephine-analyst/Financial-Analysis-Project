@@ -1,31 +1,53 @@
-
 # FINANCIAL ANALYSIS PROJECT
 
 ## PROJECT DESCRIPTION
-   This project aims to provide actionable insights into the financial performance of a business by analyzing revenue data across multiple dimensions,
-   including subcategories, branches and payment methods.
-   The project delivers interactive dashboard and reports to help stakeholders identify revenue drivers, assess trends and inform strategic decisions 
-   such as resource allocation,marketing strategies and operational improvements.
+   This project delivers **clear, actionable insights** into business financial performance by deeply analyzing **revenue data** across multiple business dimensions:
+    - Product/Service **Sub-Categories**
+    - Company **Branches** / Locations
+    - Different **Payment Methods**
+    
+  The final output is a **clean, interactive Power BI dashboard** that helps stakeholders quickly:
+    - Identify the **strongest revenue drivers**
+    - Discover **monthly trends & seasonality**
+    - Compare **branch performance**
+    - Understand **payment method patterns**
+    - Make better strategic decisions (marketing • resource allocation • expansion • operations)
 
-### SOFTWARE USED
-    * EXCEL
-    * POWER BI
+### TECHNOLOGY & TOOLS USED
+    **Microsoft Excel** → Data preparation & understanding
+    **Power BI Desktop** → Data modeling • DAX • Visualization • Dashboard
+    
+### KEY BUSINESS ANSWERED
+    - Which **product categories** generate the most revenue?
+    - Which **branches** are performing best / need attention?
+    - How do **revenue trends** look month-to-month?
+    - Which **payment methods** are most popular & valuable?
+    - Is the business showing **growth**, **seasonality**, or **warning signs**?
 
-### STEPS FOLLOWED
-    * Step 1: Load data into power bi desktop, dataset is an xlsx file.
-    * Step 2: Open power query editor to check for duplicates, empty cells and missing values.
-    * Step 3: Remove duplicates, empty cells and fill up missing values using the fill up & down option (fill with average).
-    * Step 4: Click on the close&apply button on the menu bar to close the power query editor window and apply any pending changes.
+### STEP-BY-STEP PROCESS
+    1. **Data Loading**  
+       Import Excel file → `FINANCIAL ANALYSIS PROJECT.xlsx`
+    2. **Data Cleaning in Power Query**  
+       - Remove duplicates  
+       - Handle missing/empty values  
+       - Fill missing values (when appropriate)
+    3. **Date Table Creation**  
+       ```dax
+       DATE TABLE = CALENDARAUTO()
+    4. Extract Helpful Date Columns  
+       DAX
+       Month Name = FORMAT('DATE TABLE'[Date], "MMMM")
+       Day Name   = FORMAT('DATE TABLE'[Date], "DDDD")
 
 ### ADD CALCULATED TABLE
     * Step 5: Using the Date column from the dataset to create a date table
                . DATE TABLE = CALENDARAUTO()
 
     * Step 6: Extracting the month and day from the Date Table
-               - MONTH = FORMAT('DATE TABLE'[Date],"MMMM")
-               - DAY = FORMAT('DATE TABLE'[Date],"DDDD")
+              - MONTH = FORMAT('DATE TABLE'[Date],"MMMM")
+              - DAY = FORMAT('DATE TABLE'[Date],"DDDD")
 
-### USE DAX (DATA ANALYSIS EXPRESSION) TO CREATE MEASURES FOR KEY METRICS, SUCH AS:
+### KEY METRICS & DAX MEASURES
     * Step 7: TOTAL TRANSACTION = COUNT(Sheet1[Transaction ID])
 
     * Step 8: TOTAL AMOUNT = SUM(Sheet1[Amount])
@@ -78,4 +100,5 @@
     This dashboard visualizes key financial metrics focusing on monthly revenue trends,profitability, identifying high-performing locations
     and key revenue drivers. Built for analyst and investors, it supports strategic decision-making by highlighting growth patterns and risks.
     The visualizations and underlying data are accessible via the 
+    
 <img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/474a02c3-aac0-4019-a5db-09bf718de651" />
