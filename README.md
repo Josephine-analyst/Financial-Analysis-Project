@@ -13,6 +13,9 @@
     - Understand **payment method patterns**
     - Make better strategic decisions (marketing • resource allocation • expansion • operations)
 
+<img width="1366" height="768" alt="Screenshot (70)" src="https://github.com/user-attachments/assets/563746ae-dd56-482b-997b-9260b3831afb" />
+
+
 ### TECHNOLOGY & TOOLS USED
     **Microsoft Excel** → Data preparation & understanding
     **Power BI Desktop** → Data modeling • DAX • Visualization • Dashboard
@@ -99,6 +102,5 @@
 ### CONCLUSION
     This dashboard visualizes key financial metrics focusing on monthly revenue trends,profitability, identifying high-performing locations
     and key revenue drivers. Built for analyst and investors, it supports strategic decision-making by highlighting growth patterns and risks.
-    The visualizations and underlying data are accessible via the 
+    The visualizations and underlying data are accessible via the dashboard.
     
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/474a02c3-aac0-4019-a5db-09bf718de651" />
